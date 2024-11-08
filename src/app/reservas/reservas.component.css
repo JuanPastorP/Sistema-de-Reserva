@@ -1,0 +1,21 @@
+/* Contenedor principal */
+
+  
+  /* Card de la reserva */
+  .card {
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #495057;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  button {
+    font-size: 1.1rem;
+  }

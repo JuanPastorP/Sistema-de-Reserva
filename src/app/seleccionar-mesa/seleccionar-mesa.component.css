@@ -1,0 +1,53 @@
+/* Estilo para el contenedor de las mesas (Cuadrado) */
+.restaurant-room {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Dos columnas */
+    grid-template-rows: 1fr 1fr;     /* Dos filas */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    width: 300px;  /* Ancho del contenedor */
+    height: 300px; /* Alto del contenedor */
+    margin: 0 auto; /* Centrado en la pantalla */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;  /* Reducción de padding para evitar que las mesas se salgan */
+    background-color: #f8f9fa;
+    position: relative;
+  }
+  
+  /* Estilo de las mesas */
+  .mesa {
+    width: 80px;  /* Reducción del tamaño de la mesa */
+    height: 80px; /* Reducción del tamaño de la mesa */
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;  /* Ajuste del tamaño de la fuente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mesa seleccionada */
+  .mesa.active {
+    background-color: #28a745;  /* Verde cuando seleccionada */
+    transform: scale(1.1); /* Agranda la mesa seleccionada */
+  }
+  
+  /* Efecto hover */
+  .mesa:hover {
+    transform: scale(1.05); /* Agranda ligeramente cuando el mouse pasa */
+  }
+  
+  /* Botón de confirmación */
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  

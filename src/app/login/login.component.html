@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm" style="border-radius: 10px; border: 1px solid #ddd;">
+        <div class="card-body">
+          <h2 class="text-center mb-4" style="font-family: 'Lobster', cursive; color: #d9534f;">Bienvenido al Restaurante</h2>
+          
+          <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" class="form-control" [(ngModel)]="email" name="email" required>
+            </div>
+
+            <div class="form-group mt-3">
+              <label for="password">Contraseña</label>
+              <input type="password" id="password" class="form-control" [(ngModel)]="password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn btn-danger mt-3 w-100">Iniciar sesión</button>
+
+            <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+              {{ errorMessage }}
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

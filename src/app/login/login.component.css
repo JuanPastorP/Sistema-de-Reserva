@@ -1,0 +1,19 @@
+.card {
+  background-color: #fff3e6;  /* Fondo suave color crema */
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  color: #d9534f;  /* Rojo como color principal */
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  border-color: #d43f00;
+}
+
+.alert {
+  font-weight: bold;
+  background-color: #f8d7da;
+  color: #721c24;
+}

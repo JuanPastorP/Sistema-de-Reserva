@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <h2>Selecciona una mesa para tu reserva</h2>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Mesas Disponibles</h5>
+
+      <!-- Sala de restaurante (contenedor con Grid) -->
+      <div class="restaurant-room">
+        <div *ngFor="let mesa of mesasDisponibles" 
+             class="mesa" 
+             [class.active]="mesa === mesaSeleccionada" 
+             (click)="seleccionarMesa(mesa)">
+          Mesa {{ mesa }}
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <button class="btn btn-success" (click)="confirmarReserva()">Confirmar Reserva</button>
+      </div>
+    </div>
+  </div>
+</div>
